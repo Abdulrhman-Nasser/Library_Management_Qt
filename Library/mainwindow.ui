@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>891</width>
+    <height>694</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="Login">
+       <attribute name="title">
+        <string>Login</string>
+       </attribute>
+       <widget class="QSplitter" name="splitter_2">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>220</y>
+          <width>561</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="l_username">
+                <property name="styleSheet">
+                 <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>User Name: </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="LE_user"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <item>
+               <widget class="QLabel" name="l_pass">
+                <property name="styleSheet">
+                 <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Password: </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="LE_pass"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pb_login">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Login</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QPushButton" name="pb_save">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Save User</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pb_load">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Load User</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pb_deletesaved">
+          <property name="styleSheet">
+           <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string>Delete Saved</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Admin">
+       <attribute name="title">
+        <string>Admin</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="2" column="0">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>Delete Book</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>421</width>
+             <height>151</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_15">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_9">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_4">
+                <item>
+                 <widget class="QLabel" name="l_barcodedelete">
+                  <property name="styleSheet">
+                   <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>Barcode:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LE_barcodedelete"/>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pb_deletebook">
+                <property name="styleSheet">
+                 <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>Delete</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pb_signout_admin">
+              <property name="styleSheet">
+               <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Sign Out</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Search</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>2</x>
+             <y>31</y>
+             <width>411</width>
+             <height>131</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QSplitter" name="splitter_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QWidget" name="layoutWidget">
+               <layout class="QVBoxLayout" name="verticalLayout_3">
+                <item>
+                 <widget class="QLabel" name="l_title">
+                  <property name="styleSheet">
+                   <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>  Title</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="l_filter">
+                  <property name="styleSheet">
+                   <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>  Filter</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QWidget" name="layoutWidget">
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QLineEdit" name="LE_titlesearchadmin"/>
+                </item>
+                <item>
+                 <widget class="QComboBox" name="cb_filteradmin"/>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pb_searchadmin">
+              <property name="styleSheet">
+               <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Search</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>Add Book</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>30</y>
+             <width>421</width>
+             <height>155</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_3">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_6">
+                <item>
+                 <widget class="QLabel" name="label">
+                  <property name="styleSheet">
+                   <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>  Title:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_2">
+                  <property name="styleSheet">
+                   <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string> Category:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_3">
+                  <property name="styleSheet">
+                   <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>  Barcode:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_4">
+                  <property name="styleSheet">
+                   <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                  </property>
+                  <property name="text">
+                   <string>  Author:</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QLineEdit" name="LE_titleadd"/>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LE_categoryadd"/>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LE_barcodewadd"/>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="LE_authoradd"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pb_addbook">
+              <property name="styleSheet">
+               <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="3">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>Book Data</string>
+          </property>
+          <widget class="QWidget" name="layoutWidget">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>20</y>
+             <width>421</width>
+             <height>541</height>
+            </rect>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_13">
+            <item>
+             <widget class="QListWidget" name="listWidget_admin"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pb_dataclear">
+              <property name="styleSheet">
+               <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="text">
+               <string>Clear</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="User">
+       <attribute name="title">
+        <string>User</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>423</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Search</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>2</x>
+           <y>31</y>
+           <width>411</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QSplitter" name="splitter_4">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QWidget" name="layoutWidget_2">
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QLabel" name="l_title_2">
+                <property name="styleSheet">
+                 <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>  Title</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="l_filter_2">
+                <property name="styleSheet">
+                 <string notr="true">font: 700 16pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 0);
+color: rgb(255, 255, 255);</string>
+                </property>
+                <property name="text">
+                 <string>  Filter</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="layoutWidget_3">
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <widget class="QLineEdit" name="LE_titlesearchuser"/>
+              </item>
+              <item>
+               <widget class="QComboBox" name="cb_filteruser"/>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pb_searchuser">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Search</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>430</x>
+          <y>10</y>
+          <width>422</width>
+          <height>585</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Book Data</string>
+        </property>
+        <widget class="QWidget" name="layoutWidget_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>20</y>
+           <width>421</width>
+           <height>541</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_14">
+          <item>
+           <widget class="QListWidget" name="listWidget_user"/>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pb_dataclear_2">
+            <property name="styleSheet">
+             <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+            </property>
+            <property name="text">
+             <string>Clear</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>280</y>
+          <width>371</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <item>
+          <widget class="QPushButton" name="pb_signout">
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Sign Out</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pb_exit">
+           <property name="styleSheet">
+            <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+background-color: rgb(85, 0, 127);
+color: rgb(255, 255, 255);</string>
+           </property>
+           <property name="text">
+            <string>Exit</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>891</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pb_dataclear_2</sender>
+   <signal>clicked()</signal>
+   <receiver>listWidget_user</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>628</x>
+     <y>606</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>625</x>
+     <y>563</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pb_dataclear</sender>
+   <signal>clicked()</signal>
+   <receiver>listWidget_admin</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>591</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>583</x>
+     <y>559</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

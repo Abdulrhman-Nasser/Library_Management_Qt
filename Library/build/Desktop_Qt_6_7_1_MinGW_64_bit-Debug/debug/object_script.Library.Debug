@@ -1,0 +1,13 @@
+debug/books.o
+debug/caretaker.o
+debug/json.o
+debug/main.o
+debug/mainwindow.o
+debug/memento.o
+debug/user.o
+debug/moc_books.o
+debug/moc_caretaker.o
+debug/moc_json.o
+debug/moc_mainwindow.o
+debug/moc_memento.o
+debug/moc_user.o

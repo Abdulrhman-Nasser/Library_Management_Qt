@@ -1,0 +1,13 @@
+release/books.o
+release/caretaker.o
+release/json.o
+release/main.o
+release/mainwindow.o
+release/memento.o
+release/user.o
+release/moc_books.o
+release/moc_caretaker.o
+release/moc_json.o
+release/moc_mainwindow.o
+release/moc_memento.o
+release/moc_user.o
